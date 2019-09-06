@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="@color/colorBackground_1"
+    android:id="@+id/nav_header_container">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/icon_user"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:src="@drawable/ic_user"
+        app:riv_oval="true"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:id="@+id/nav_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignBaseline="@id/icon_user"
+        android:text="@string/nav_welcome"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nav_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Username"
+        android:textSize="20sp"
+        android:layout_below="@id/nav_welcome"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/icon_user"
+        android:layout_toRightOf="@id/icon_user"
+        android:layout_marginLeft="50dp"/>
+
+</RelativeLayout>

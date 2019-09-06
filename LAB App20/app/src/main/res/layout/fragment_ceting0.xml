@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<!--
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_LorR"
+        android:src="@drawable/sign_left_or_right"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/majorTips"
+        android:text="请调节当前音量"
+        android:textSize="25sp"
+        android:textColor="@color/colorText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="291dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/secondTips"
+        android:layout_below="@id/majorTips"
+        android:text="(当调节到最小可听见音量时，按确认键)"
+        android:textSize="15sp"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ceTing_seekBarProgress"
+        android:text=" 0 "
+        android:textColor="@color/colorText"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/secondTips"
+        android:layout_marginTop="40dp"/>
+
+    <com.example.app10.LongTouchBtn
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/ceTing_button_VolunmMinus"
+        android:layout_below="@id/secondTips"
+        android:layout_toLeftOf="@id/secondTips"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ceting_volunmminus"
+        android:layout_marginRight="-23dp"/>
+
+    <com.example.app10.LongTouchBtn
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/ceTing_button_VolunmPlus"
+        android:layout_below="@id/secondTips"
+        android:layout_toRightOf="@id/secondTips"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ceting_volunmplus"
+        android:layout_marginLeft="-23dp"/>
+
+    <SeekBar
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ceTing_seekBarProgress"
+        android:id="@+id/ceTing_SeekBar"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:max="100"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="fragment0"/>
+
+
+</RelativeLayout>

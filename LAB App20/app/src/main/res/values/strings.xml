@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name"> </string>
+    <string name="welcome">请听</string>
+    <string name="StartTest">开始测听</string>
+    <string name="setting">场景设置</string>
+    <string name="undetermined">暂定功能</string>
+    <string name="setting_2">场景2</string>
+    <string name="setting_1">场景1</string>
+    <string name="setting_3">场景3</string>
+    <string name="menu">This is a menu</string>
+    <string name="HearingPicture">听力图</string>
+    <string name="ModuleCorrect">模式校正</string>
+    <string name="EnvironmentSet">场景设置</string>
+    <string name="AboutUs">关于我们</string>
+    <string name="Help">帮助</string>
+    <string name="LogOut">退出登陆</string>
+    <string name="nav_welcome">欢迎</string>
+    <string name="Username">xxxxxxx</string>
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">close drawer</string>
+
+    <string-array name="number_normal_images">
+        <item>@drawable/first_normal</item>
+        <item>@drawable/second_normal</item>
+       <!-- <item>@drawable/third_normal</item>-->
+    </string-array>
+
+    <string-array name="number_selected_images">
+        <item>@drawable/first_selected</item>
+        <item>@drawable/second_selected</item>
+       <!-- <item>@drawable/third_selected</item>-->
+    </string-array>
+
+</resources>
