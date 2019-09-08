@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground_1">
+
+    <ImageView
+        android:id="@+id/background_ear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/background_ear"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textSize="33sp"
+        android:typeface="monospace" />
+
+    <CheckBox
+        android:id="@+id/switch_0"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        android:layout_below="@id/background_ear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/button_style"
+        android:button="@null"
+        android:gravity="center" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobutton_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_setting"
+            android:text=" 场景1  "
+            android:textSize="20sp"
+            android:typeface="monospace"
+            android:textColor="@color/colorText"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radiobutton_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_setting"
+            android:text=" 场景2  "
+            android:textSize="20sp"
+            android:typeface="monospace"
+            android:textColor="@color/colorText"/>
+
+        <RadioButton
+            android:id="@+id/radiobutton_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/button_setting"
+            android:text=" 场景3  "
+            android:textSize="20sp"
+            android:typeface="monospace"
+            android:textColor="@color/colorText"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/switch_0"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@id/switch_0"
+        android:layout_toRightOf="@id/switch_0"
+        android:button="@null"
+        />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/switch_0"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_toStartOf="@id/switch_0"
+        android:layout_toLeftOf="@id/switch_0"
+        android:button="@null"
+        />
+
+
+
+</RelativeLayout>
