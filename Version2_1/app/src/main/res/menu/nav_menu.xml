@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_HearingPicture"
+            android:title="@string/HearingPicture"
+            android:icon="@drawable/hearing"/>
+
+        <item
+            android:id="@+id/nav_ModuleCorrect"
+            android:title="@string/ModuleCorrect"
+            android:icon="@drawable/modulecorrect"/>
+        <item
+            android:id="@+id/nav_EnvironmentSet"
+            android:title="@string/EnvironmentSet"
+            android:icon="@drawable/environmentset"/>
+        <item
+            android:id="@+id/nav_AboutUs"
+            android:title="@string/AboutUs"
+            android:icon="@drawable/aboutus"/>
+        <item
+            android:id="@+id/nav_Help"
+            android:title="@string/Help"
+            android:icon="@drawable/help"/>
+
+        <item
+            android:id="@+id/nav_LogOut"
+            android:title="@string/LogOut"
+            android:icon="@drawable/logout"/>
+    </group>
+</menu>
