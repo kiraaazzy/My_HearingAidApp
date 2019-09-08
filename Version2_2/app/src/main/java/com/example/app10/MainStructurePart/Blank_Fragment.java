@@ -1,11 +1,10 @@
-package com.example.app10;
+package com.example.app10.MainStructurePart;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +15,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.example.app10.CeTingPart.CeTingActivity;
+import com.example.app10.LongTouchBtn;
+import com.example.app10.R;
 import com.triggertrap.seekarc.SeekArc;
 import com.triggertrap.seekarc.SeekArc.OnSeekArcChangeListener;
 
@@ -135,7 +137,7 @@ public class Blank_Fragment extends Fragment {
                 public void onClick(View v) {
                     //从 fragment 中切入CeTingActivity
                     Intent intent = new Intent();
-                    intent.setClass(getActivity(),CeTingActivity.class);
+                    intent.setClass(getActivity(), CeTingActivity.class);
                     startActivity(intent);
 
                 }

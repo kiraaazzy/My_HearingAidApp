@@ -17,6 +17,20 @@ android {
         }
     }
 
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/aboutus_part',
+                            'src/main/res/layouts/ceting_part',
+                            'src/main/res/layouts/help_part',
+                            'src/main/res/layouts/main_structure',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+        }
+    }
 }
 
 dependencies {
@@ -30,3 +44,8 @@ dependencies {
     implementation project(path: ':seekbarlibrary')
 
 }
+
+
+
+
+

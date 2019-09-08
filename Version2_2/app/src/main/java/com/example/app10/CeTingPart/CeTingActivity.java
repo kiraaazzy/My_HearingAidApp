@@ -1,4 +1,4 @@
-package com.example.app10;
+package com.example.app10.CeTingPart;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.app10.MainStructurePart.MainActivity;
+import com.example.app10.R;
 
 
 public class CeTingActivity extends AppCompatActivity implements View.OnClickListener {
@@ -113,7 +116,7 @@ public class CeTingActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button_exitCeTing:
-                Intent intent = new Intent(CeTingActivity.this,MainActivity.class);
+                Intent intent = new Intent(CeTingActivity.this, MainActivity.class);
                 startActivity(intent);
                 break;
             case R.id.button_startCeTing:

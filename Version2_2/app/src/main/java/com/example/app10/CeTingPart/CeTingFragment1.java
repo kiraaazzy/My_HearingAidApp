@@ -1,35 +1,35 @@
-package com.example.app10;
+package com.example.app10.CeTingPart;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class CeTingFragment2 extends Fragment implements View.OnClickListener {
+import com.example.app10.LongTouchBtn;
+import com.example.app10.R;
+
+public class CeTingFragment1 extends Fragment implements View.OnClickListener {
 
     private SeekBar ceTing_seekBar;
     private TextView ceTing_seekBarProgress;
     private int progress ;
     private int max;
     int addOrRemove  = 1;
-    private Handler handler = new CeTingFragment2.MyHandler();
+    private Handler handler = new CeTingFragment1.MyHandler();
     private MyOnClick myOnClick;
     TextView textView_back;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_ceting2,container,false);
+        View view=inflater.inflate(R.layout.fragment_ceting1,container,false);
 
         ceTing_seekBar = (SeekBar)view.findViewById(R.id.ceTing_SeekBar) ;
         ceTing_seekBarProgress = (TextView)view.findViewById(R.id.ceTing_seekBarProgress) ;
@@ -39,7 +39,7 @@ public class CeTingFragment2 extends Fragment implements View.OnClickListener {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 ceTing_seekBarProgress.setText(String.valueOf(progress));
-                CeTingFragment2.this.progress = progress;
+                CeTingFragment1.this.progress = progress;
             }
 
             @Override

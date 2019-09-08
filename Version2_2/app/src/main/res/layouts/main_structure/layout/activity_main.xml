@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/blank_fragment"
-                    android:name="com.example.app10.Blank_Fragment"/>
+                    android:name="com.example.app10.MainStructurePart.Blank_Fragment"/>
             </FrameLayout>
 
     </LinearLayout>

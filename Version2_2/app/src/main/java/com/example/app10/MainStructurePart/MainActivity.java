@@ -1,4 +1,4 @@
-package com.example.app10;
+package com.example.app10.MainStructurePart;
 //有关主界面：
 //箭头动画
 //在点击radiobutton的时候会切换至不同声音的预设值
@@ -6,25 +6,26 @@ package com.example.app10;
 //
 
 
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.example.app10.AboutUs_Fragment;
+import com.example.app10.Help_Fragment;
+import com.example.app10.MainStructurePart.Blank_Fragment;
+import com.example.app10.R;
 
 
 public class MainActivity extends AppCompatActivity {

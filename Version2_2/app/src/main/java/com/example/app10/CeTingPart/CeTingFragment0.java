@@ -1,19 +1,19 @@
-package com.example.app10;
+package com.example.app10.CeTingPart;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.example.app10.LongTouchBtn;
+import com.example.app10.R;
 
 public class CeTingFragment0 extends Fragment implements View.OnClickListener {
 
